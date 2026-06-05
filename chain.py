@@ -5,7 +5,7 @@ from langchain_core.chat_history import InMemoryChatMessageHistory
 from prompt import prompt
 from parser import parser
 
-_model = ChatOllama(model="gemma3:4b")
+_model = ChatOllama(model="llama3.2:1b")
 
 _chain = prompt | _model | parser
 
